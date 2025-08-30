@@ -1,3 +1,21 @@
 .navbar-brand img {
   width: 150px;
 }
+
+.subscribe {
+  background-image: url(./img/subscribe.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.footer {
+  background-color: #212529;
+}
+.copyright {
+  padding-bottom: 100px;
+}
+
+.sign-up {
+  background-color: #ffffff30;
+  backdrop-filter: blur(8px);
+}
