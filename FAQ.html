@@ -15,7 +15,7 @@
     <!-- link my style -->
     <link rel="stylesheet" href="./mystyle.css" />
   </head>
-  <body>
+  <body class="pt-5">
     <!-- navbar -->
 
     <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary py-2">
@@ -37,9 +37,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 small">
             <li class="nav-item">
-              <a class="nav-link " aria-current="page" href="./index.html"
-                >Home</a>
-              >
+              <a class="nav-link" aria-current="page" href="./">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./about.html">About</a>
@@ -48,10 +46,10 @@
               <a class="nav-link" href="./courses.html">Courses</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./FAQ.html">FAQ</a>
+              <a class="nav-link active" href="./FAQ.html">FAQ</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="./">Blog</a>
+              <a class="nav-link" href="./blog.html">Blog</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./contact.html">Contact</a>
@@ -139,322 +137,228 @@
 
     <!-- header -->
 
-    <div class="border border-bottom">
-      <div class="container py-5 mt-4">
-        <div class="row justify-content-between align-items-center">
-          <div class="col-md-5">
-            <div>
-              <h3 class="fs-3 fw-normal">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-                alias nulla minus sunt similique
-              </h3>
-              <p class="text-secondary">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Consectetur, debitis mollitia laudantium tenetur, tempora
-                obcaecati provident voluptatum
-              </p>
-              <a
-                href="#!"
-                class="text-decoration-none btn btn-sm text-bg-success d-inline-flex align-items-center"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-envelope-check-fill me-2"
-                  viewBox="0 0 16 16"
+    <header class="faq py-5 border-bottom">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- khối bên trái -->
+          <div class="col-md-6 order-md-1 order-2 mt-3 mt-md-0">
+            <div class="breadcrumb-hodel">
+              <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+                <ol
+                  class="breadcrumb border d-inline-flex px-2 py-1 rounded-pill align-items-center"
                 >
-                  <path
-                    d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 4.697v4.974A4.491 4.491 0 0 0 12.5 8a4.49 4.49 0 0 0-1.965.45l-.338-.207L16 4.697Z"
-                  ></path>
-                  <path
-                    d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-1.993-1.679a.5.5 0 0 0-.686.172l-1.17 1.95-.547-.547a.5.5 0 0 0-.708.708l.774.773a.75.75 0 0 0 1.174-.144l1.335-2.226a.5.5 0 0 0-.172-.686Z"
-                  ></path>
-                </svg>
-                Sign-up to newsletters
-              </a>
+                  <li class="breadcrumb-item">
+                    <a href="./index.html" class="text-decoration-none small"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="breadcrumb-item active small" aria-current="page">
+                    Library
+                  </li>
+                </ol>
+              </nav>
+            </div>
+
+            <h1 class="fw-normal fs-3">
+              Lorem ipsum dolor sit amet consectetur.
+            </h1>
+            <p class="fs-6 small fw-light text-secondary">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+              quia natus amet! Amet reiciendis alias perspiciatis vel, nostrum
+              officia iste illum fugiat distinctio tenetur molestiae incidunt
+              repellat quisquam ratione vero!
+            </p>
+            <div class="col-md-10">
+              <form class="d-flex" role="search">
+                <div class="input-group">
+                  <input
+                    class="form-control me-0 form-control-sm"
+                    type="search"
+                    placeholder="Search for..."
+                    aria-label="Search"
+                  />
+                  <button class="btn btn-success btn-sm" type="submit">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-search"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
+              </form>
             </div>
           </div>
-          <div class="col-md-6 mt-md-0 mt-3">
-            <img src="./img/main-header.jpg" class="rounded img-fluid" alt="" />
+          <!-- khối bên phai -->
+          <div class="col-md-6 order-1">
+            <div>
+              <img
+                src="./img/main-header.jpg"
+                class="img-fluid rounded"
+                alt=""
+              />
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </header>
 
-    <!-- courses list -->
+    <!-- faq list -->
 
-    <div class="container py-5">
-      <div class="row gx-4">
-        <!-- courses left -->
-        <div class="col-md-9">
-          <div class="list-group">
-            <div
-              class="list-group-item d-flex justify-content-between small fw-bold text-bg-light"
-            >
-              List of all blog posts
-              <span
-                class="badge text-bg-warning d-flex align-items-center rounded-pill"
-              >
-                24 Posts Available</span
-              >
-            </div>
-
+    <search class="faq-list py-5">
+      <div class="container">
+        <div class="row">
+          <!-- list question -->
+          <div class="col-md-8">
             <!-- item 1 -->
-
-            <a href="./single-post.html" class="list-group-item">
-              <div class="row align-items-center g-3">
-                <div class="col-md-4">
-                  <img
-                    src="./img/main-header.jpg"
-                    class="img-fluid rounded"
-                    alt=""
-                  />
-                </div>
-                <div class="col-md-8">
-                  <h5>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  </h5>
-                  <p class="text-secondary small">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Vel rem optio voluptate tenetur, maxime incidunt accusantium
-                    perferendis impedit aperiam asperiores!
-                  </p>
-                  <div class="small">
-                    <span class="small badge text-bg-dark rounded-pill"
-                      ><strong>Posted on:</strong> 2nd Aug 2022</span
-                    >
-                    <span class="small badge text-bg-dark rounded-pill"
-                      ><strong>Category: </strong>Tech</span
-                    >
-                    <span class="small badge text-bg-dark rounded-pill"
-                      ><strong>Author: </strong>Tuhoc.cc</span
-                    >
-                  </div>
-                </div>
+            <details class="card small mb-3">
+              <summary class="card-header">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </summary>
+              <div class="card-body">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                sequi earum, odit, placeat, esse alias sunt quisquam repudiandae
+                molestias reprehenderit corporis tenetur in laboriosam
+                voluptatum debitis aliquid ab dolorem quae!
               </div>
-            </a>
-
+            </details>
             <!-- item 2 -->
-
-            <a href="./single-post.html" class="list-group-item">
-              <div class="row align-items-center g-3">
-                <div class="col-md-4">
-                  <img
-                    src="./img/main-header.jpg"
-                    class="img-fluid rounded"
-                    alt=""
-                  />
-                </div>
-                <div class="col-md-8">
-                  <h5>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  </h5>
-                  <p class="text-secondary small">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Vel rem optio voluptate tenetur, maxime incidunt accusantium
-                    perferendis impedit aperiam asperiores!
-                  </p>
-                  <div class="small">
-                    <span class="small badge text-bg-dark rounded-pill"
-                      ><strong>Posted on:</strong> 2nd Aug 2022</span
-                    >
-                    <span class="small badge text-bg-dark rounded-pill"
-                      ><strong>Category: </strong>Tech</span
-                    >
-                    <span class="small badge text-bg-dark rounded-pill"
-                      ><strong>Author: </strong>Tuhoc.cc</span
-                    >
-                  </div>
-                </div>
+            <details class="card small mb-3">
+              <summary class="card-header">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </summary>
+              <div class="card-body">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                sequi earum, odit, placeat, esse alias sunt quisquam repudiandae
+                molestias reprehenderit corporis tenetur in laboriosam
+                voluptatum debitis aliquid ab dolorem quae!
               </div>
-            </a>
-
+            </details>
             <!-- item 3 -->
-
-            <a href="./single-post.html" class="list-group-item">
-              <div class="row align-items-center g-3">
-                <div class="col-md-4">
-                  <img
-                    src="./img/main-header.jpg"
-                    class="img-fluid rounded"
-                    alt=""
-                  />
-                </div>
-                <div class="col-md-8">
-                  <h5>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  </h5>
-                  <p class="text-secondary small">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Vel rem optio voluptate tenetur, maxime incidunt accusantium
-                    perferendis impedit aperiam asperiores!
-                  </p>
-                  <div class="small">
-                    <span class="small badge text-bg-dark rounded-pill"
-                      ><strong>Posted on:</strong> 2nd Aug 2022</span
-                    >
-                    <span class="small badge text-bg-dark rounded-pill"
-                      ><strong>Category: </strong>Tech</span
-                    >
-                    <span class="small badge text-bg-dark rounded-pill"
-                      ><strong>Author: </strong>Tuhoc.cc</span
-                    >
-                  </div>
-                </div>
+            <details class="card small mb-3">
+              <summary class="card-header">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </summary>
+              <div class="card-body">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                sequi earum, odit, placeat, esse alias sunt quisquam repudiandae
+                molestias reprehenderit corporis tenetur in laboriosam
+                voluptatum debitis aliquid ab dolorem quae!
               </div>
-            </a>
-
+            </details>
             <!-- item 4 -->
-
-            <a href="./single-post.html" class="list-group-item">
-              <div class="row align-items-center g-3">
-                <div class="col-md-4">
-                  <img
-                    src="./img/main-header.jpg"
-                    class="img-fluid rounded"
-                    alt=""
-                  />
-                </div>
-                <div class="col-md-8">
-                  <h5>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  </h5>
-                  <p class="text-secondary small">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Vel rem optio voluptate tenetur, maxime incidunt accusantium
-                    perferendis impedit aperiam asperiores!
-                  </p>
-                  <div class="small">
-                    <span class="small badge text-bg-dark rounded-pill"
-                      ><strong>Posted on:</strong> 2nd Aug 2022</span
-                    >
-                    <span class="small badge text-bg-dark rounded-pill"
-                      ><strong>Category: </strong>Tech</span
-                    >
-                    <span class="small badge text-bg-dark rounded-pill"
-                      ><strong>Author: </strong>Tuhoc.cc</span
-                    >
-                  </div>
-                </div>
+            <details class="card small mb-3">
+              <summary class="card-header">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </summary>
+              <div class="card-body">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                sequi earum, odit, placeat, esse alias sunt quisquam repudiandae
+                molestias reprehenderit corporis tenetur in laboriosam
+                voluptatum debitis aliquid ab dolorem quae!
               </div>
-            </a>
-
+            </details>
             <!-- item 5 -->
-
-            <a href="./single-post.html" class="list-group-item">
-              <div class="row align-items-center g-3">
-                <div class="col-md-4">
-                  <img
-                    src="./img/main-header.jpg"
-                    class="img-fluid rounded"
-                    alt=""
-                  />
-                </div>
-                <div class="col-md-8">
-                  <h5>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  </h5>
-                  <p class="text-secondary small">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Vel rem optio voluptate tenetur, maxime incidunt accusantium
-                    perferendis impedit aperiam asperiores!
-                  </p>
-                  <div class="small">
-                    <span class="small badge text-bg-dark rounded-pill"
-                      ><strong>Posted on:</strong> 2nd Aug 2022</span
-                    >
-                    <span class="small badge text-bg-dark rounded-pill"
-                      ><strong>Category: </strong>Tech</span
-                    >
-                    <span class="small badge text-bg-dark rounded-pill"
-                      ><strong>Author: </strong>Tuhoc.cc</span
-                    >
-                  </div>
-                </div>
+            <details class="card small">
+              <summary class="card-header">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </summary>
+              <div class="card-body">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                sequi earum, odit, placeat, esse alias sunt quisquam repudiandae
+                molestias reprehenderit corporis tenetur in laboriosam
+                voluptatum debitis aliquid ab dolorem quae!
               </div>
-            </a>
+            </details>
           </div>
-        </div>
+          <!-- post question -->
+          <div class="col-md-4 mt-3 mt-md-0 ">
+            <div class="card">
+              <div class="card-header text-bg-primary">Post your Questions</div>
+              <div class="card-body">
+                <form>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="mb-2">
+                        <input
+                          type="search"
+                          name=""
+                          id=""
+                          class="form-control form-control-sm"
+                          placeholder="Name"
+                        />
+                      </div>
+                    </div>
 
-        <!-- courses right -->
+                    <div class="col-md-6">
+                      <div class="mb-2">
+                        <input
+                          type="email"
+                          name=""
+                          id=""
+                          class="form-control form-control-sm"
+                          placeholder="Email"
+                        />
+                      </div>
+                    </div>
 
-        <div class="col-md-3 mt-3 mt-md-0">
-          <div class="list-group small">
-            <div class="list-group-item fw-bold">Archives</div>
-            <a class="list-group-item d-flex justify-content-between">
-              2019
-              <span
-                class="badge text-bg-warning rounded-pill align-content-center"
-                >14</span
-              >
-            </a>
-
-            <a class="list-group-item d-flex justify-content-between">
-              2020
-              <span
-                class="badge text-bg-warning rounded-pill align-content-center"
-                >46</span
-              >
-            </a>
-
-            <a class="list-group-item d-flex justify-content-between">
-              2021
-              <span
-                class="badge text-bg-warning rounded-pill align-content-center"
-                >71</span
-              >
-            </a>
-
-            <a class="list-group-item d-flex justify-content-between">
-              2022
-              <span
-                class="badge text-bg-warning rounded-pill align-content-center"
-                >8</span
-              >
-            </a>
-          </div>
-
-          <div class="list-group small mt-3">
-            <div class="list-group-item fw-bold">Categories</div>
-            <a class="list-group-item d-flex justify-content-between">
-              Tech
-              <span
-                class="badge text-bg-warning rounded-pill align-content-center"
-                >46</span
-              >
-            </a>
-
-            <a class="list-group-item d-flex justify-content-between">
-              Tutorials
-              <span
-                class="badge text-bg-warning rounded-pill align-content-center"
-                >15</span
-              >
-            </a>
-
-            <a class="list-group-item d-flex justify-content-between">
-              Tips & Tricks
-              <span
-                class="badge text-bg-warning rounded-pill align-content-center"
-                >12</span
-              >
-            </a>
-
-            <a class="list-group-item d-flex justify-content-between">
-              Product Reviews
-              <span
-                class="badge text-bg-warning rounded-pill align-content-center"
-                >42</span
-              >
-            </a>
+                    <div class="col-md-12">
+                      <div class="mb-2">
+                        <input
+                          type="search"
+                          name=""
+                          id=""
+                          class="form-control form-control-sm"
+                          placeholder="Your Question Title"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <textarea
+                        placeholder="Question in detail"
+                        name=""
+                        id=""
+                        rows="5"
+                        class="form-control form-control-sm"
+                      ></textarea>
+                    </div>
+                    <div class="col-md-12">
+                      <button
+                        class="d-flex align-items-center btn btn-success btn-sm w-100 mt-3 justify-content-center"
+                        type="submit"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-question-circle-fill me-2"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247zm2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z"
+                          ></path>
+                        </svg>
+                        Post Question
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </search>
 
-    <!-- subscribe -->
+    <!-- search -->
+
     <div class="py-5 subscribe">
       <div class="container">
         <div class="row align-items-center justify-content-center">
@@ -670,7 +574,6 @@
         </div>
       </a>
     </div>
-
     <!-- link js bt -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
